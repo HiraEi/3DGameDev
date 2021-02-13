@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class ObstacleGenerator : MonoBehaviour
 {
-    /// <summary>
-    /// 生成したいオブジェクト
-    /// </summary>
+    [SerializeField] GameObject obj = null;
+    /// <summary>生成したいオブジェクト
     [SerializeField] GameObject obstaclePrefab = null;
-
-    /// <summary>
-    /// 生成する時間間隔
-    /// </summary>
+    /// <summary>生成する時間間隔
     [SerializeField] float generatTime = 0f;
 
-    IEnumerable generat()
-    {
-        Instantiate(obstaclePrefab, this.transform);
+    //IEnumerable generat()
+    //{
+    //    Instantiate(obstaclePrefab, obj.transform.position, Quaternion.identity);
 
-        yield return new WaitForSeconds(generatTime);
+    //    yield return new WaitForSeconds(generatTime);
+    //}
+
+    void Update()
+    {
+        //generat();
+        Instantiate(obstaclePrefab, obj.transform.position, Quaternion.identity);
     }
 }

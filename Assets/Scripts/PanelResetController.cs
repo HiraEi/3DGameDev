@@ -14,11 +14,12 @@ public class PanelResetController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("リセットパネルを踏んだ");
-
         panelReset();
     }
 
+    /// <summary>
+    /// タグがついたギミックパネルをすべてOFFにする
+    /// </summary>
     void panelReset()
     {
         foreach (var item in objs)

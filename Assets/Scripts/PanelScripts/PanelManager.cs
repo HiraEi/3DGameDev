@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class PanelManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PanelManager : MonoBehaviour
     int firstClearCount = 4;
 
     bool lastFlag = false;
+
+    [SerializeField]PlayableDirector[] director;
 
     void Update()
     {

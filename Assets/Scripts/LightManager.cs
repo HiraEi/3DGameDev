@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class LightManager : MonoBehaviour
 {
-    
+    public bool gimmikClear = false;
 }

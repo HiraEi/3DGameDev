@@ -29,6 +29,6 @@ public class PanelResetController : MonoBehaviour
             panel.panelSwitch();
         }
 
-        panel.manager.count = 4;
+        panel.manager.playCount = 4;
     }
 }

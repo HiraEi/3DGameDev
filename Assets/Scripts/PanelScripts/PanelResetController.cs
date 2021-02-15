@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class PanelResetController : MonoBehaviour
 {
+    /// <summary> リセットしたいパネル
     GameObject[] objs;
     PanelController panel;
- 
+    PanelManager manager;
+    GameObject managerObj;
+
     void Start()
     {
         objs = GameObject.FindGameObjectsWithTag("GimmikPanel");
+        managerObj = GameObject.Find("PanelManager");
+        manager = managerObj.GetComponent<PanelManager>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -18,7 +23,7 @@ public class PanelResetController : MonoBehaviour
     }
 
     /// <summary>
-    /// タグがついたギミックパネルをすべてOFFにする
+    /// 設定されたギミックパネルをすべてOFFにする
     /// </summary>
     void panelReset()
     {
@@ -29,6 +34,6 @@ public class PanelResetController : MonoBehaviour
             panel.panelSwitch();
         }
 
-        panel.manager.playCount = 4;
+        manager.playCount = 4;
     }
 }

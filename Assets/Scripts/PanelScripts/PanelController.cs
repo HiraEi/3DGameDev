@@ -6,7 +6,7 @@ public class PanelController : MonoBehaviour
 {
     public bool gimmick = false;
     GameObject managerObj;
-    public PanelManager manager;
+    PanelManager manager;
     MeshRenderer mesh;
     [SerializeField] Material off = null;
     [SerializeField] Material on = null;

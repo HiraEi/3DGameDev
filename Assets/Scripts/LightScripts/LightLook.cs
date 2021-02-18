@@ -5,23 +5,13 @@ using UnityEngine.Playables;
 
 public class LightLook : MonoBehaviour
 {
-    //[SerializeField] GameObject mainCam = null;
-    //[SerializeField] GameObject rightLookCam = null;
-    //[SerializeField] GameObject post = null;
+    /// <summary>
+    /// ライトを見るタイムラインを設定する
+    /// </summary>
     [SerializeField] PlayableDirector director = null;
 
     private void OnTriggerEnter(Collider other)
     {
-        //mainCam.SetActive(false);
-        //rightLookCam.SetActive(true);
         director.Play();
-        //post.SetActive(true);
     }
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    rightLookCam.SetActive(false);
-    //    mainCam.SetActive(true);
-    //    post.SetActive(false);
-    //}
 }

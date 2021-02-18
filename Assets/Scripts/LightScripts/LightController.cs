@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class LightController : MonoBehaviour
 {
-    LightManager manager;
     GameObject lightManager;
-
+    LightManager manager;
+    
     void Start()
     {
         lightManager = GameObject.Find("LightManager");

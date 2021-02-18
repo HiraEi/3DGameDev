@@ -11,6 +11,6 @@ public class LightSetting : MonoBehaviour
     {
         clearNum = Random.Range(0, lightObj.Length);
         lightObj[clearNum].SetActive(true);
-        Debug.Log(lightObj[clearNum]);
+        //Debug.Log(lightObj[clearNum]);
     }
 }

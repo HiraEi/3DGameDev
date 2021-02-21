@@ -8,9 +8,9 @@ public class LightManager : MonoBehaviour
 
     private void Update()
     {
-        if(gimmikClear)
-        {
-            Debug.Log("クリア");
-        }
+        //if (gimmikClear)
+        //{
+        //    Debug.Log("クリア");
+        //}
     }
 }

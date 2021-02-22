@@ -6,30 +6,30 @@ using UnityEngine.Playables;
 public class PanelManager : MonoBehaviour
 {
     /// <summary> クリア枚数の設定
-    [SerializeField] int clearCount = 0;
+    [SerializeField] int m_clearCount = 0;
     /// <summary>プレイヤーが踏んだパネルの枚数
-    public int playCount = 0;
+    public int m_playCount = 0;
     /// <summary> 最初の扉のクリア枚数設定
-    int firstClearCount = 4;
+    int m_firstClearCount = 4;
     /// <summary> 最初の扉のクリアフラグ
-    bool firstFlag = false;
+    bool m_firstFlag = false;
     /// <summary> 最後の扉のクリアフラグ
-    bool lastFlag = false;
+    bool m_lastFlag = false;
     /// <summary>　扉のクリア演出の設定
-    [SerializeField] PlayableDirector[] director = null;
+    [SerializeField] PlayableDirector[] m_director = null;
 
     void Update()
     {
-        if(playCount == firstClearCount && !firstFlag)
+        if(m_playCount == m_firstClearCount && !m_firstFlag)
         {
-            firstFlag = true;
-            director[0].Play();
+            m_firstFlag = true;
+            m_director[0].Play();
         }
 
-        if(playCount == clearCount && !lastFlag)
+        if(m_playCount == m_clearCount && !m_lastFlag)
         {
-            lastFlag = true;
-            director[1].Play();
+            m_lastFlag = true;
+            m_director[1].Play();
         }
     }
 }

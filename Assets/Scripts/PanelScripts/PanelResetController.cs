@@ -5,16 +5,16 @@ using UnityEngine;
 public class PanelResetController : MonoBehaviour
 {
     /// <summary> リセットしたいパネル
-    GameObject[] objs;
-    PanelController panel;
-    PanelManager manager;
-    GameObject managerObj;
+    GameObject[] m_objs;
+    PanelController m_panel;
+    PanelManager m_manager;
+    GameObject m_managerObj;
 
     void Start()
     {
-        objs = GameObject.FindGameObjectsWithTag("GimmikPanel");
-        managerObj = GameObject.Find("PanelManager");
-        manager = managerObj.GetComponent<PanelManager>();
+        m_objs = GameObject.FindGameObjectsWithTag("GimmikPanel");
+        m_managerObj = GameObject.Find("PanelManager");
+        m_manager = m_managerObj.GetComponent<PanelManager>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,13 +27,13 @@ public class PanelResetController : MonoBehaviour
     /// </summary>
     void panelReset()
     {
-        foreach (var item in objs)
+        foreach (var item in m_objs)
         {
-            panel = item.GetComponent<PanelController>();
-            panel.gimmick = true;
-            panel.panelSwitch();
+            m_panel = item.GetComponent<PanelController>();
+            m_panel.m_gimmick = true;
+            m_panel.panelSwitch();
         }
 
-        manager.playCount = 4;
+        m_manager.m_playCount = 4;
     }
 }

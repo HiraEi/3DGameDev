@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PanelController : MonoBehaviour
 {
-    public bool gimmick = false;
-    GameObject managerObj;
-    PanelManager manager;
-    MeshRenderer mesh;
+    public bool m_gimmick = false;
+    GameObject m_managerObj;
+    PanelManager m_manager;
+    MeshRenderer m_mesh;
     [SerializeField] Material off = null;
     [SerializeField] Material on = null;
 
     void Start()
     {
-        managerObj = GameObject.Find("PanelManager");
-        manager = managerObj.GetComponent<PanelManager>();
-        mesh = GetComponent<MeshRenderer>();
-        this.mesh.material = off;
+        m_managerObj = GameObject.Find("PanelManager");
+        m_manager = m_managerObj.GetComponent<PanelManager>();
+        m_mesh = GetComponent<MeshRenderer>();
+        this.m_mesh.material = off;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,17 +26,17 @@ public class PanelController : MonoBehaviour
 
     public void panelSwitch()
     {
-        if(!gimmick)
+        if(!m_gimmick)
         {
-            gimmick = true;
-            this.mesh.material = on;
-            manager.playCount++;
+            m_gimmick = true;
+            this.m_mesh.material = on;
+            m_manager.m_playCount++;
         }
         else
         {
-            gimmick = false;
-            this.mesh.material = off;
-            manager.playCount--;
+            m_gimmick = false;
+            this.m_mesh.material = off;
+            m_manager.m_playCount--;
         }
     }
 }

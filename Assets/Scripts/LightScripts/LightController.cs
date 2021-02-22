@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class LightController : MonoBehaviour
 {
-    GameObject lightManager;
-    LightManager manager;
+    GameObject m_lightManager;
+    LightManager m_manager;
     
     void Start()
     {
-        lightManager = GameObject.Find("LightManager");
-        manager = lightManager.GetComponent<LightManager>();
+        m_lightManager = GameObject.Find("LightManager");
+        m_manager = m_lightManager.GetComponent<LightManager>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        manager.gimmikClear = true;
+        m_manager.m_gimmikClear = true;
     }
 }

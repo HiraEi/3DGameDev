@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightManager : MonoBehaviour
 {
-    public bool gimmikClear = false;
+    public bool m_gimmikClear = false;
 
     private void Update()
     {

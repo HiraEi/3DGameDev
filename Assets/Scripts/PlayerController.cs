@@ -54,9 +54,4 @@ public class PlayerController : MonoBehaviour
         horizontalVelocity.y = 0;
         m_anim.SetFloat("Run", horizontalVelocity.magnitude);
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-    }
 }

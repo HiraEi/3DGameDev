@@ -17,9 +17,9 @@ public class ObstacleGenerator : MonoBehaviour
     //    yield return new WaitForSeconds(generatTime);
     //}
 
-    void Update()
-    {
-        //generat();
-        //Instantiate(obstaclePrefab, obj.transform.position, Quaternion.identity);
-    }
+    //void Update()
+    //{
+    //    //generat();
+    //    Instantiate(obstaclePrefab, obj.transform.position, Quaternion.identity);
+    //}
 }

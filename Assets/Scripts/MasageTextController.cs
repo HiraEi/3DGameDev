@@ -31,11 +31,21 @@ public class MasageTextController : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    m_anim.Play("close");
+
+    //    if(m_openSE && m_closeSE)
+    //    {
+    //        m_audio.PlayOneShot(m_closeSE);
+    //    }
+    //}
+
+    private void OnTriggerExit(Collider other)
     {
         m_anim.Play("close");
 
-        if(m_openSE && m_closeSE)
+        if (m_openSE && m_closeSE)
         {
             m_audio.PlayOneShot(m_closeSE);
         }

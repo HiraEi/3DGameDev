@@ -37,7 +37,7 @@ public class ElevatorController : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        transform.parent = null;
+        collision.transform.parent = null;
     }
 
     void Elevator()

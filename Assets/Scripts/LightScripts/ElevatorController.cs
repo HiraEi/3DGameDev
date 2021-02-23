@@ -27,17 +27,16 @@ public class ElevatorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.transform.SetParent(this.transform);
         if (m_blueElevator || m_manager.m_gimmikClear)
         {
-            other.transform.SetParent(this.transform);
+            other.gameObject.transform.SetParent(transform);
             Elevator();
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        collision.transform.parent = null;
+        collision.gameObject.transform.SetParent(null);
     }
 
     void Elevator()

@@ -31,9 +31,10 @@ public class PanelResetController : MonoBehaviour
         {
             m_panel = item.GetComponent<PanelController>();
             m_panel.m_gimmick = true;
+            m_panel.m_audio.enabled = false;
             m_panel.panelSwitch();
+            m_panel.m_audio.enabled = true;
         }
-
         m_manager.m_playCount = 4;
     }
 }

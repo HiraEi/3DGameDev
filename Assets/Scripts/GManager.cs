@@ -22,6 +22,6 @@ public class GManager : MonoBehaviour
 
     //void Update()
     //{
-        
+
     //}
 }

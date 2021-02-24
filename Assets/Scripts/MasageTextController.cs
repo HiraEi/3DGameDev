@@ -27,7 +27,7 @@ public class MasageTextController : MonoBehaviour
 
         if(m_openSE && m_audio)
         {
-            m_audio.PlayOneShot(m_closeSE);
+            m_audio.PlayOneShot(m_openSE);
         }
     }
 
@@ -35,7 +35,7 @@ public class MasageTextController : MonoBehaviour
     {
         m_anim.Play("close");
 
-        if (m_openSE && m_closeSE)
+        if (m_closeSE && m_audio)
         {
             m_audio.PlayOneShot(m_closeSE);
         }

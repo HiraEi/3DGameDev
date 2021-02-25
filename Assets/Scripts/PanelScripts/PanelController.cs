@@ -40,7 +40,7 @@ public class PanelController : MonoBehaviour
         else
         {
             m_gimmick = false;
-            this.m_mesh.material = off;
+            this.m_mesh.material = off;          
             m_audio.PlayOneShot(offSE);
             m_manager.m_playCount--;
         }

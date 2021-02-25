@@ -124,8 +124,9 @@ MonoBehaviour:
   m_gimmick: 0
   off: {fileID: 2100000, guid: 5cc131921747eaa4cb40cc89f9c8a475, type: 2}
   on: {fileID: 2100000, guid: 22ee096e742468e4ba89c08c877f359e, type: 2}
-  offSE: {fileID: 8300000, guid: cb101e923b5e90049b128511cb545c7c, type: 3}
-  onSE: {fileID: 8300000, guid: d3542c8e402652a45924bb7bbf677dfc, type: 3}
+  m_audio: {fileID: 0}
+  offSE: {fileID: 8300000, guid: a54ee757009eb404ebb6eb0583bdedb8, type: 3}
+  onSE: {fileID: 8300000, guid: cb101e923b5e90049b128511cb545c7c, type: 3}
 --- !u!82 &-5916505801862428651
 AudioSource:
   m_ObjectHideFlags: 0

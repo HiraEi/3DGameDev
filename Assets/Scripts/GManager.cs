@@ -1,27 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GManager : MonoBehaviour
 {
-    //LightManager m_lightManager;
-    //PanelManager m_panelManager;
+    void LightLoad()
+    {
+        SceneManager.LoadScene(1);
+    }
 
-    //enum status
-    //{
-    //    title,
-    //    light,
-    //    panel,
-    //    end,
-    //}
+    void PanelLoad()
+    {
+        SceneManager.LoadScene(2);
+    }
 
-    //void Start()
-    //{
-    //    status status = status.title;
-    //}
-
-    //void Update()
-    //{
-
-    //}
+    void EndLoad()
+    {
+        SceneManager.LoadScene(3);
+    }
 }

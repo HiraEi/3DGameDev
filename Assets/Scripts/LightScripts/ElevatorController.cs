@@ -45,7 +45,7 @@ public class ElevatorController : MonoBehaviour
         Sequence seq = DOTween.Sequence();
         seq.AppendInterval(0.5f)
             .Append(this.transform.DOMove(m_target.position, 2f))
-            .AppendInterval(3f)
+            .AppendInterval(1.5f)
             .Append(this.transform.DOMove(startPosition, 2f))
             .AppendInterval(3f)
             .OnComplete(() => m_trigger.enabled = true);

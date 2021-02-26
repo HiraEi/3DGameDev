@@ -19,4 +19,9 @@ public class GManager : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+    public void TitleLoad()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

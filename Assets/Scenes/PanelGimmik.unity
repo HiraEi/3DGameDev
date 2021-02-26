@@ -2847,7 +2847,7 @@ PrefabInstance:
     - target: {fileID: 5806204413319802379, guid: c681e59cd9a70c94c95f17045e52a47d,
         type: 3}
       propertyPath: m_textStr
-      value: "\u30D1\u30CD\u30EB\u3092\u8E0F\u3080\u3068\u8272\u304C\u5909\u308F\u308B\n\u8272\u3092\u63C3\u3048\u308B\u3068\u2026"
+      value: "\u30D1\u30CD\u30EB\u3092\u8E0F\u3080\u3068\u8272\u304C\u5909\u308F\u308B\n\n\u8272\u3092\u63C3\u3048\u308B\u3068\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 5806204413319802379, guid: c681e59cd9a70c94c95f17045e52a47d,
         type: 3}
@@ -5847,7 +5847,7 @@ PrefabInstance:
     - target: {fileID: 5806204413319802379, guid: c681e59cd9a70c94c95f17045e52a47d,
         type: 3}
       propertyPath: m_textStr
-      value: "\u4ECA\u5EA6\u306F\u30D1\u30CD\u30EB\u304C\u305F\u304F\u3055\u3093\u2026\n\u56F0\u3063\u305F\u3089\u9EC4\u8272\u306E\u30D1\u30CD\u30EB\u3092\u8E0F\u3082\u3046"
+      value: "\u4ECA\u5EA6\u306F\u30D1\u30CD\u30EB\u304C\u305F\u304F\u3055\u3093\u2026\n\n\u56F0\u3063\u305F\u3089\u9EC4\u8272\u306E\u30D1\u30CD\u30EB\u3092\u8E0F\u3082\u3046"
       objectReference: {fileID: 0}
     - target: {fileID: 5806204413319802379, guid: c681e59cd9a70c94c95f17045e52a47d,
         type: 3}
@@ -11691,7 +11691,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-36304
+  m_Name: pb_Mesh-9350
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

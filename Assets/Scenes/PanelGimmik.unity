@@ -5030,7 +5030,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 148044, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: m_Name
-      value: Blue Scifi Rock 1
+      value: GoalObj
       objectReference: {fileID: 0}
     - target: {fileID: 414840, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,17 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class GManager : MonoBehaviour
 {
-    void LightLoad()
+    public void LightLoad()
     {
         SceneManager.LoadScene(1);
     }
 
-    void PanelLoad()
+    public void PanelLoad()
     {
         SceneManager.LoadScene(2);
     }
 
-    void EndLoad()
+    public void EndLoad()
     {
         SceneManager.LoadScene(3);
     }

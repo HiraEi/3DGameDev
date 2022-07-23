@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class LightController : MonoBehaviour
 {
-    GameObject m_lightManager;
+    /// <summary>ライトマネージャー</summary>
     LightManager m_manager;
     AudioSource m_audio;
-    [SerializeField] AudioClip clearSE = null;
+    /// <summary>クリアSE</summary>
+    [SerializeField] AudioClip m_clearSE = null;
     
     void Start()
     {
-        m_lightManager = GameObject.Find("LightManager");
-        m_manager = m_lightManager.GetComponent<LightManager>();
+        m_manager = GameObject.Find("LightManager").GetComponent<LightManager>();
         m_audio = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         m_manager.m_gimmikClear = true;
-        m_audio.PlayOneShot(clearSE);
+        m_audio.PlayOneShot(m_clearSE);
     }
 }

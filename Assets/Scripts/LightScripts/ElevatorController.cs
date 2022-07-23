@@ -5,11 +5,11 @@ using DG.Tweening;
 
 public class ElevatorController : MonoBehaviour
 {
-    /// <summary>エレベーターの移動先
+    /// <summary>エレベーターの移動先</summary>
     [SerializeField] Transform m_target = null;
-    /// <summary>エレベーターの起動スイッチ
+    /// <summary>エレベーターの起動スイッチ</summary>
     [SerializeField] Collider m_trigger = null;
-    /// <summary>エレベーターの初期位置
+    /// <summary>エレベーターの初期位置</summary>
     Vector3 startPosition;
 
     [SerializeField] bool m_blueElevator = false;

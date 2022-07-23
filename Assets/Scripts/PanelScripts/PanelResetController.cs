@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PanelResetController : MonoBehaviour
 {
-    /// <summary> リセットしたいパネル
+    /// <summary> リセットしたいパネル</summary>
     GameObject[] m_objs;
     PanelController m_panel;
     PanelManager m_manager;

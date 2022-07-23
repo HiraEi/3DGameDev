@@ -5,17 +5,17 @@ using UnityEngine.Playables;
 
 public class PanelManager : MonoBehaviour
 {
-    /// <summary> クリア枚数の設定
+    /// <summary> クリア枚数の設定</summary>
     [SerializeField] int m_clearCount = 0;
-    /// <summary>プレイヤーが踏んだパネルの枚数
+    /// <summary>プレイヤーが踏んだパネルの枚数</summary>
     public int m_playCount = 0;
-    /// <summary> 最初の扉のクリア枚数設定
+    /// <summary> 最初の扉のクリア枚数設定</summary>
     int m_firstClearCount = 4;
-    /// <summary> 最初の扉のクリアフラグ
+    /// <summary> 最初の扉のクリアフラグ</summary>
     bool m_firstFlag = false;
-    /// <summary> 最後の扉のクリアフラグ
+    /// <summary> 最後の扉のクリアフラグ</summary>
     bool m_lastFlag = false;
-    /// <summary>　扉のクリア演出の設定
+    /// <summary>　扉のクリア演出の設定</summary>
     [SerializeField] PlayableDirector[] m_director = null;
 
     void Update()

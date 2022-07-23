@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 
 public class LightLook : MonoBehaviour
 {
-    /// <summary>ライトを見るタイムラインを設定する
+    /// <summary>ライトを見るタイムラインを設定する</summary>
     [SerializeField] PlayableDirector m_director = null;
     
     private void OnTriggerEnter(Collider other)
